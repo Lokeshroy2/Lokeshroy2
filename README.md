@@ -1,16 +1,13 @@
-## Hi there 👋
+# Hi, I'm Lokesh Chandra Roy 👋
 
-<!--
-**Lokeshroy2/Lokeshroy2** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🔧 AI/ML Engineer — building production voice agents, RAG pipelines & agentic systems
+🏢 Currently at Tecdata IT Services · 500+ calls/day voice agent in production
+📍 Chennai · Open to AI/ML roles
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## What I build
+
+- 🎙️ **Real-time AI voice agents** — OpenAI Realtime API, Asterisk ARI, RTP, μ-law audio
+- 🤖 **LLM pipelines** — LangChain, LangGraph, multi-agent systems, RAGAS evaluation  
+- 📄 **Document AI** — OCR, entity extraction, PDF-to-JSON at scale
+- 🔍 **RAG systems** — hybrid retrieval, vector DBs, semantic search
