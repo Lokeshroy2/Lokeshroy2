@@ -12,5 +12,11 @@
 ## Tech Stack
 🛠️ Python · FastAPI · GPT-4o · Gemini · LangChain · Pinecone · FAISS · Redis · MySQL
 
+## Current Focus
+- 🔭 Building a multi-agent agentic framework with LangGraph
+- 🌱 Exploring function calling, tool use & memory in LLM agents
+- 💬 Ask me about voice agents, RAG, or LLM evaluation
+
 ## Connect
 📬 lokeshroy523@gmail.com
+💼 https://www.linkedin.com/in/lokesh-roy02/
