@@ -10,7 +10,7 @@
 - 🔍 **RAG systems** — hybrid retrieval, vector DBs, semantic search.
 
 ## Tech Stack
-🛠️ Python · FastAPI · GPT-4o · Gemini · LangChain · Pinecone · FAISS · Redis · MySQL
+🛠️ 🛠️ Python · FastAPI · GPT-4o · Gemini · LangChain · LangGraph · Pinecone · FAISS · Redis · MySQL · Twilio · PyTorch · HuggingFace
 
 ## Current Focus
 - 🔭 Building a multi-agent agentic framework with LangGraph
