@@ -15,7 +15,7 @@
 ## Current Focus
 - 🔭 Building a multi-agent agentic framework with LangGraph
 - 🌱 Exploring function calling, tool use & memory in LLM agents
-- 💬 Ask me about voice agents, RAG, or LLM evaluation.
+- 💬 Ask me about voice agents, RAG, or LLM evaluation
 
 ## Connect
 📬 lokeshroy523@gmail.com
