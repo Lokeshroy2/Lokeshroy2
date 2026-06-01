@@ -4,10 +4,10 @@
 📍 Chennai · Open to AI/ML roles.
 
 ## What I build
-- 🎙️ **Real-time AI voice agents** — OpenAI Realtime API, Asterisk ARI, RTP, μ-law audio
-- 🤖 **LLM pipelines** — LangChain, LangGraph, multi-agent systems, RAGAS evaluation
-- 📄 **Document AI** — OCR, entity extraction, PDF-to-JSON at scale
-- 🔍 **RAG systems** — hybrid retrieval, vector DBs, semantic search
+- 🎙️ **Real-time AI voice agents** — OpenAI Realtime API, Asterisk ARI, RTP, μ-law audio.
+- 🤖 **LLM pipelines** — LangChain, LangGraph, multi-agent systems, RAGAS evaluation.
+- 📄 **Document AI** — OCR, entity extraction, PDF-to-JSON at scale.
+- 🔍 **RAG systems** — hybrid retrieval, vector DBs, semantic search.
 
 ## Tech Stack
 🛠️ 🛠️ Python · FastAPI · GPT-4o · Gemini · LangChain · LangGraph · Pinecone · FAISS · Redis · MySQL · Twilio · PyTorch · HuggingFace
