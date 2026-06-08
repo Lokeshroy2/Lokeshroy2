@@ -17,6 +17,6 @@
 - 🌱 Exploring function calling, tool use & memory in LLM agents
 - 💬 Ask me about voice agents, RAG, or LLM evaluation
 
-## Connect
+## Connect:
 📬 lokeshroy523@gmail.com
 💼 https://www.linkedin.com/in/lokesh-roy02/
