@@ -1,5 +1,4 @@
 # Hi, I'm Lokesh Chandra Roy
-
 AI/ML Engineer building production voice agents, RAG pipelines, and agentic systems.
 
 Currently at **Tecdata IT Services** — shipping a real-time voice AI platform handling 10,000+ daily interactions in production.
