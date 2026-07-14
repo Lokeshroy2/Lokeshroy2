@@ -32,7 +32,7 @@ Agent that ingests policy/claims data, flags anomalies via combined rule-based c
 `Scikit-learn` `Isolation Forest` `LLM Reporting`
 
 ### [Agent Red-Teaming Harness](https://github.com/Lokeshroy2)
-Adversarially tested an OCR/extraction pipeline with 7 attack payloads — found and fixed 4 real vulnerabilities (first-match regex injection, whitespace-bypassed validation). Also built an LLM prompt-injection test harness covering jailbreak, persona hijack, and tool-call hijacking.
+Built an attack harness that fired 7 adversarial documents at an OCR/field-extraction pipeline — 5 of 7 succeeded on the original code by exploiting first-match field extraction (a fake value planted earlier in a document wins) and a whitespace-validation bypass (blank-looking input read as filled). Fixed both root causes (last-match extraction, whitespace stripping before validation) and re-validated: 0 of 7 attacks succeed, confirmed by a regression test that honest documents still process correctly. Also built a separate LLM prompt-injection/jailbreak test harness for an AI document-reading agent, built and demo-ready pending a live API key for full runs.
 `Adversarial Testing` `Prompt Injection` `Security`
 
 ### [SQL + Statistical Fraud Detection Pipeline](https://github.com/Lokeshroy2)
