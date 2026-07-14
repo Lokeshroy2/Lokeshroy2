@@ -15,6 +15,7 @@ Chennai, India · Open to AI/ML Engineer, GenAI Engineer, and NLP Engineer roles
 - **Real-time voice AI** — GPT-4o Realtime API, Gemini Live, Asterisk ARI, RTP audio streaming, VAD/AGC
 - **Agentic systems** — LangGraph, multi-agent orchestration, Agent2Agent (A2A) protocol, Model Context Protocol (MCP)
 - **RAG & retrieval** — hybrid dense + BM25 retrieval, Pinecone, FAISS, RAGAS-based evaluation
+- **Computer vision** — object detection & multi-object tracking, camera calibration / homography for real-world measurement
 - **Document intelligence** — OCR + NLP pipelines, structured extraction from unstructured documents
 - **Agent safety & evaluation** — adversarial red-teaming, prompt injection testing, statistical validation of ML pipelines
 
@@ -46,6 +47,14 @@ Decomposed 3 years of daily sales data, validated stationarity with the Augmente
 LangGraph-coordinated multi-agent system (search, summarization, fact-checking) with structured hand-off between agents, benchmarked using the RAGAS framework — faithfulness 0.87, relevance 0.91.
 `LangGraph` `LangChain` `RAGAS`
 
+### [Vehicle Speed Estimation](https://github.com/Lokeshroy2)
+A computer-vision pipeline that detects vehicles with YOLOv8, tracks them across frames with ByteTrack to give each vehicle a stable ID, and estimates real-world speed from pixel displacement over time. Supports homography-based camera calibration (4 reference points mapped to real road coordinates) for accurate perspective-corrected speed, in addition to a simple fixed pixel-to-meter scale.
+`YOLOv8` `ByteTrack` `OpenCV` `Camera Calibration` `Python`
+
+### [Local Multi-Document RAG Chatbot](https://github.com/Lokeshroy2)
+A fully local RAG chatbot — upload PDF/TXT/Markdown files and ask questions answered from their content, with no cloud LLM or API key required. Chunks documents, embeds them with Sentence-Transformers (`all-MiniLM-L6-v2`), indexes with FAISS, and generates cited, streamed answers via Ollama/Mistral 7B. Includes conversational query rewriting for follow-up questions and a retrieval evaluation harness (100% hit@5 on a 13-question golden set).
+`FastAPI` `Sentence-Transformers` `FAISS` `Ollama` `Mistral`
+
 ---
 
 ## In production at Tecdata IT Services
@@ -66,7 +75,9 @@ LangGraph-coordinated multi-agent system (search, summarization, fact-checking) 
 
 **ML & Evaluation:** Scikit-learn · XGBoost · Statsmodels · MLflow · RAGAS
 
-**Infra:** Docker · AWS (EC2, S3) · Asterisk ARI · Twilio
+**Computer Vision:** YOLOv8 · ByteTrack · OpenCV
+
+**Infra:** Docker · AWS (EC2, S3) · Asterisk ARI · Twilio · Ollama
 
 ---
 
