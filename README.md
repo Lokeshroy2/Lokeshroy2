@@ -23,35 +23,27 @@ Chennai, India · Open to AI/ML Engineer, GenAI Engineer, and NLP Engineer roles
 
 ## Featured projects
 
-### [A2A + MCP Multi-Agent System](https://github.com/Lokeshroy2)
+### [A2A + MCP Multi-Agent System](https://github.com/Lokeshroy2/a2a_mcp_project)
 Two independently implemented agents (OCR-based document agent, rule-based finance agent) that discover each other and exchange tasks purely via the official Agent2Agent protocol — no custom integration code between internals. Verified live agent discovery, task handoff, and error propagation end-to-end.
 `A2A Protocol` `MCP` `Tesseract OCR` `Python`
 
-### [Insurance Finance Analysis Agent](https://github.com/Lokeshroy2)
+### [Insurance Finance Analysis Agent](https://github.com/Lokeshroy2/Insurance-Finance-Analysis-Agent-)
 Agent that ingests policy/claims data, flags anomalies via combined rule-based checks + Isolation Forest, and generates natural-language audit reports. Rules alone: 69% precision / 78% recall. Isolation Forest alone: 23% precision. Combined approach: 91% recall.
 `Scikit-learn` `Isolation Forest` `LLM Reporting`
 
-### [Agent Red-Teaming Harness](https://github.com/Lokeshroy2)
+### [Agent Red-Teaming Harness](https://github.com/Lokeshroy2/redteam_project)
 Built an attack harness that fired 7 adversarial documents at an OCR/field-extraction pipeline — 5 of 7 succeeded on the original code by exploiting first-match field extraction (a fake value planted earlier in a document wins) and a whitespace-validation bypass (blank-looking input read as filled). Fixed both root causes (last-match extraction, whitespace stripping before validation) and re-validated: 0 of 7 attacks succeed, confirmed by a regression test that honest documents still process correctly. Also built a separate LLM prompt-injection/jailbreak test harness for an AI document-reading agent, built and demo-ready pending a live API key for full runs.
 `Adversarial Testing` `Prompt Injection` `Security`
 
-### [SQL + Statistical Fraud Detection Pipeline](https://github.com/Lokeshroy2)
-Engineered behavioral features from 60,000 transactions using SQL window functions, validated each with Welch's t-test / Chi-square before modeling. XGBoost reached 76% precision / 94.6% recall under 1.5% class imbalance — deployed behind a load-tested FastAPI service (438.8 req/sec, 0 errors).
-`SQL` `SciPy` `XGBoost` `FastAPI`
+### [Fraud Anomaly Intelligence](https://github.com/Lokeshroy2/fraud-anomaly-intelligence)
+End-to-end fraud detection on 590K transactions (IEEE-CIS): time-based train/val/test split (fraud rate visibly drifts over time, so a random split would've leaked future patterns), leakage-safe feature engineering, and a supervised LightGBM model benchmarked against a zero-label Isolation Forest (PR-AUC 0.61 vs. 0.13 — still ~4x random with no labels at all). Cost-based decision thresholds cut business cost 56.6% vs. a naive cutoff; SHAP explainability, PSI/KS drift monitoring on genuinely out-of-time data, and a FastAPI scoring service — containerized and CI'd on GitHub Actions.
+`LightGBM` `Isolation Forest` `SHAP` `FastAPI` `Docker` `MLflow`
 
-### [Retail Sales Forecasting](https://github.com/Lokeshroy2)
-Decomposed 3 years of daily sales data, validated stationarity with the Augmented Dickey-Fuller test, and compared Seasonal Naive, Holt-Winters, and SARIMA. Holt-Winters gave the best result (8.36% MAPE) — with an honest diagnosis of where all models under-predicted holiday-season spikes.
-`Statsmodels` `Pandas` `Time Series`
-
-### [Multi-Agent Research Pipeline](https://github.com/Lokeshroy2)
-LangGraph-coordinated multi-agent system (search, summarization, fact-checking) with structured hand-off between agents, benchmarked using the RAGAS framework — faithfulness 0.87, relevance 0.91.
-`LangGraph` `LangChain` `RAGAS`
-
-### [Vehicle Speed Estimation](https://github.com/Lokeshroy2)
+### [Vehicle Speed Estimation](https://github.com/Lokeshroy2/vehicle-speed-detection)
 A computer-vision pipeline that detects vehicles with YOLOv8, tracks them across frames with ByteTrack to give each vehicle a stable ID, and estimates real-world speed from pixel displacement over time. Supports homography-based camera calibration (4 reference points mapped to real road coordinates) for accurate perspective-corrected speed, in addition to a simple fixed pixel-to-meter scale.
 `YOLOv8` `ByteTrack` `OpenCV` `Camera Calibration` `Python`
 
-### [Local Multi-Document RAG Chatbot](https://github.com/Lokeshroy2)
+### [Local Multi-Document RAG Chatbot](https://github.com/Lokeshroy2/RAG_Chatbot)
 A fully local RAG chatbot — upload PDF/TXT/Markdown files and ask questions answered from their content, with no cloud LLM or API key required. Chunks documents, embeds them with Sentence-Transformers (`all-MiniLM-L6-v2`), indexes with FAISS, and generates cited, streamed answers via Ollama/Mistral 7B. Includes conversational query rewriting for follow-up questions and a retrieval evaluation harness (100% hit@5 on a 13-question golden set).
 `FastAPI` `Sentence-Transformers` `FAISS` `Ollama` `Mistral`
 
