@@ -12,6 +12,7 @@ Chennai, India · Open to AI/ML Engineer, GenAI Engineer, and NLP Engineer roles
 
 ## What I work on
 
+
 - **Real-time voice AI** — GPT-4o Realtime API, Gemini Live, Asterisk ARI, RTP audio streaming, VAD/AGC
 - **Agentic systems** — LangGraph, multi-agent orchestration, Agent2Agent (A2A) protocol, Model Context Protocol (MCP)
 - **RAG & retrieval** — hybrid dense + BM25 retrieval, Pinecone, FAISS, RAGAS-based evaluation
