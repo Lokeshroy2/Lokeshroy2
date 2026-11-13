@@ -8,7 +8,7 @@ Chennai, India · Open to AI/ML Engineer, GenAI Engineer, and NLP Engineer roles
 
 [LinkedIn](https://www.linkedin.com/in/lokesh-roy02/) · [Email](mailto:lokeshroy523@gmail.com)
 
----
+-----
 
 ## What I work on
 
